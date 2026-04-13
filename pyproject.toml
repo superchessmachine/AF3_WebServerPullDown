@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interaction-job-builder"
+version = "0.1.0"
+description = "Generate reusable JSON job bundles from BioGRID-style protein interaction exports"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "requests>=2.31"
+]
+
+[project.scripts]
+interaction-job-builder = "interaction_job_builder.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

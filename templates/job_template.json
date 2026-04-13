@@ -1,0 +1,19 @@
+[
+  {
+    "name": "example_job",
+    "modelSeeds": [
+      "123456789"
+    ],
+    "sequences": [
+      {
+        "proteinChain": {
+          "sequence": "MADEUPSEQUENCE",
+          "count": 1,
+          "useStructureTemplate": true
+        }
+      }
+    ],
+    "dialect": "alphafoldserver",
+    "version": 2
+  }
+]

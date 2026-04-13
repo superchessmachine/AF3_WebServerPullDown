@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+
+input_data/
+personal_data/
+generated_job_output/
+AF3_WebServerPullDown_Output_final/
+
+.pytest_cache/
+

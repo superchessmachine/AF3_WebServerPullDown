@@ -1,0 +1,28 @@
+{
+  "main_proteins": [
+    "PROTEIN_A",
+    "PROTEIN_B",
+    "PROTEIN_C"
+  ],
+  "batch_size": 30,
+  "job_sets": [
+    {
+      "job_set_id": "set_01_seed_pair_against_shared_pool",
+      "description": "PROTEIN_A + PROTEIN_B seed complex against pooled interactors from PROTEIN_A and PROTEIN_B.",
+      "seed_proteins": ["PROTEIN_A", "PROTEIN_B"],
+      "pool_sources": ["PROTEIN_A", "PROTEIN_B"]
+    },
+    {
+      "job_set_id": "set_02_seed_trimer_against_full_pool",
+      "description": "PROTEIN_A + PROTEIN_B + PROTEIN_C seed complex against pooled interactors from all three sources.",
+      "seed_proteins": ["PROTEIN_A", "PROTEIN_B", "PROTEIN_C"],
+      "pool_sources": ["PROTEIN_A", "PROTEIN_B", "PROTEIN_C"]
+    },
+    {
+      "job_set_id": "set_03_single_seed_against_selected_pool",
+      "description": "PROTEIN_A-only seed complex against interactors pooled from PROTEIN_A and PROTEIN_C.",
+      "seed_proteins": ["PROTEIN_A"],
+      "pool_sources": ["PROTEIN_A", "PROTEIN_C"]
+    }
+  ]
+}
